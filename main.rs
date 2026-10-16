@@ -78,7 +78,7 @@ fn mod_power(b:&mut Big,e:&Big,m:&Big)->Big{
 fn main() {
     let mut rng=rand::thread_rng();
     let  mut primes:Vec<Big>=Vec::with_capacity(100);
-    while primes.len()<1{
+    while primes.len()<100{
         let mut condidate=rng.gen_biguint(2048);
         condidate.set_bit(2047,true);
         condidate.set_bit(0,true);
